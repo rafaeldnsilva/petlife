@@ -179,3 +179,65 @@ footer p  a {
 #copyright a {
     color: #FF9A6C;
 }
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 16px;
+        text-align: center;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    #inicio {
+        flex-direction: column;
+        padding: 16px;
+        text-align: center;
+    }
+
+    #inicio img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #clinica, #farmacia, #duvidas {
+        flex-direction: column;
+        padding: 32px 16px;
+    }
+
+    #clinica img, #farmacia img, #duvidas img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    footer div {
+        margin-bottom: 16px;
+    }
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+    header {
+        padding: 16px 32px;
+    }
+
+    #inicio {
+        padding: 32px;
+    }
+
+    #clinica, #farmacia, #duvidas {
+        padding: 48px 32px;
+    }
+}
