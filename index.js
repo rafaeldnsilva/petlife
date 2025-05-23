@@ -6,3 +6,10 @@ elementosDuvida.forEach(function (duvida) {
     })
     
 });
+
+const hamburgerIcon = document.querySelector('.hamburger-icon');
+const nav = document.getElementById('main-nav');
+
+hamburgerIcon.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});
